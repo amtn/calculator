@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "utf-8">
+    <script src = "https://code.jquery.com/jquery-3.2.1.js" integrity = "sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin = "anonymous"></script>
+    <link rel = "stylesheet" href = "calculator.css">
+    <title>電卓</title>
+  </head>
+  
+  <body>
+    
+    <!--ここに記述していきましょう！-->
+    <input type = "text" class = "display" value = "">
+    
+    <!--789+-->
+    <div>
+      <input type = "button" class = "button" value = "7" onclick = "append('7')">
+      <input type = "button" class = "button" value = "8" onclick = "append('8')">
+      <input type = "button" class = "button" value = "9" onclick = "append('9')">
+      <input type = "button" class = "button" value = "/" onclick = "append('/')">
+    </div>
+    <!--456*-->
+    <div>
+      <input type = "button" class = "button" value = "4" onclick = "append('4')">
+      <input type = "button" class = "button" value = "5" onclick = "append('5')">
+      <input type = "button" class = "button" value = "6" onclick = "append('6')">
+      <input type = "button" class = "button" value = "*" onclick = "append('*')">
+    </div>
+    <!--123- -->
+    <div>
+      <input type = "button" class = "button" value = "1" onclick = "append('1')">
+      <input type = "button" class = "button" value = "2" onclick = "append('2')">
+      <input type = "button" class = "button" value = "3" onclick = "append('3')">
+      <input type = "button" class = "button" value = "-" onclick = "append('-')">
+    </div>
+    <!--0c=+-->
+    <div>
+      <input type = "button" class = "button" value = "0" onclick = "append('0')">
+      <input type = "button" class = "button" value = "C" onclick = "update('')">
+      <input type = "button" class = "button" value = "=" onclick = "calc()">
+      <input type = "button" class = "button" value = "+" onclick = "append('+')">
+    </div>
+    
+    <script src = "calculator3.js"></script>
+  </body>
+</html>
